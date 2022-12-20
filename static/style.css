@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+#logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: cursive;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+#navbar{
+    background-color: rgb(165, 44, 44);
+    padding: 7px;
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#navbar ul{
+display: flex;
+flex-direction: row;
+/* justify-content: center; */
+align-items: center;
+
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 3px 15px;
+    color: white;
+
+    
+}
+#navbar li a:hover{
+    color: black;
+}
+#introSection {
+    background: center/cover url(../static/bg.jpg);
+    /* background-color: aqua; */
+    height: 600px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    flex-direction: column;
+
+}
+#missionSection{
+    height: 300px;
+    margin: auto;
+    max-width: 100vw;
+    background: url(../static/mission.jpg);
+    /* border: 2px solid red; */
+
+    
+}
+#missionSection h2{
+   /* font-size: x-large; */
+   padding-top:12px;
+   text-align: center;
+   color: white;
+
+    
+}
+.card-collection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+  
+    border: 2px solid black;
+    width: 25vw;
+    height: 200px;
+    margin: 23px 60px;
+    /* display: inline-block; */
+    border-radius: 5px;
+    background-color: pink;
+ }
+ .card-box{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid black; */
+    width: 315px;
+    height: 124px;
+    margin: auto;
+    padding: 8px;
+    align-items: center;
+ }
+ .card-img img{
+    height: 50px;
+    width: 50px;
+ }
+ .card h3{
+    text-align: center;
+    margin-top: 5px;
+ }
+ .card-content p{
+    font-size: 15px;
+    font-family:cursive;
+    padding-top: 10px;
+ }
+
+#detail{
+    font-size: x-large;
+
+}
+#sponsorsSection{
+    background: url(../static/sbg.jpg);
+    height: 300px;
+}
+#sponsorsSection h1{
+
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+}
+#sponsors{
+    padding: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+#sponsors img{
+    height: 150px;
+    width: 150px;
+}
+
+
+#footer{
+    background-color: black;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white
+    
+}
+
+/* responsiveness */
+@media(max-width:1200px){
+    .card{
+  
+        border: 2px solid black;
+        width: 25vw;
+        height: 200px;
+        margin: 23px 40px;
+        /* display: inline-block; */
+        border-radius: 5px;
+        background-color: rgb(127, 211, 121);
+     }
+     .card-box{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid black; */
+        width: 300px;
+        height: 124px;
+        margin: 4px;
+        padding: 6px;
+        align-items: center;
+        justify-content: center;
+     }
+     .card-img img{
+      display: none;
+     }
+     .card h3{
+        text-align: center;
+        margin-top: 5px;
+     }
+     .card-content p{
+        font-size: 12px;
+        font-family:cursive;
+        padding-top: 10px;
+     }
+    
+}

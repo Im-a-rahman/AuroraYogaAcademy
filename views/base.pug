@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title Aurora Yoga Academy
+    block scripts
+    block style
+        style 
+            include ../static/style.css
+
+  body
+    nav#navbar
+        ul  
+            div#logo 
+                img(src="../static/icon.ico", alt="")
+                | AYA
+            li #[a(href="/") Home ]
+            li #[a(href="/about") About ]
+            li #[a(href="/services") Services ]
+            li #[a(href="/info") ClassInfo ]
+            li #[a(href="/contact") Contact Us ]
+    block content
+    footer#footer
+        p Copyright © 2022 AuroraYogaAcademy.com
+        
+         

@@ -1,0 +1,48 @@
+h1{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* border: 2px solid black; */
+    height: 88vh;
+    max-width: 100vw;
+    /* margin: 10px auto; */
+    background:url(../static/sbg.jpg);
+
+}
+.myInput{
+    width:40vw;
+    height: 29px;
+    border: 2px solid rgb(165, 44, 44);
+    border-radius: 5px;
+    margin: 10px auto;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 3px 5px;
+    outline: none;
+}
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 20px; */
+    /* height: 75vh; */
+    /* border: 2px solid black; */
+    /* margin: 15px 30px; */
+    /* width: 60vw; */
+    
+}
+.btn{
+    /* border: 2px solid black; */
+    padding: 3px;
+    /* font-weight: bold; */
+    background-color: rgb(218, 65, 65);
+    cursor: pointer;
+    border-radius: 8px;
+}
